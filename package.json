@@ -1,7 +1,28 @@
 {
-  "private": true,
+  "name": "a-todo-app",
+  "version": "1.0.0",
+  "description": "Todo application based on the design TodoMVC which focuses on accessibility, uses React.",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "dist": "webpack",
+    "release:major": "npm version major && npm publish && git push --follow-tags",
+    "release:minor": "npm version minor && npm publish && git push --follow-tags",
+    "release:patch": "npm version patch && npm publish && git push --follow-tags"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-eslint": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-react": "^6.0.15",
+    "babel-preset-stage-0": "^6.5.0",
+    "react-hot-loader": "^1.2.9",
+    "webpack": "^1.12.0",
+    "webpack-dev-server": "^1.12.0"
+  },
   "dependencies": {
-    "todomvc-app-css": "^2.0.0",
-    "todomvc-common": "^1.0.0"
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0"
   }
 }

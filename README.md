@@ -1,2 +1,2 @@
 # accessible-web-example
-Example project to learn accessability basics
+Example project to learn accessibility basics
